@@ -1,0 +1,21 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flappy_Pony.MainPage">
+
+    <AbsoluteLayout x:Name="GameLayout" BackgroundColor="SkyBlue">
+        <Image x:Name="PonyImage"
+               Source="pony.gif"
+               Aspect="AspectFit"
+               AbsoluteLayout.LayoutBounds="0.1, 0.5, 0.15, 0.2"
+               AbsoluteLayout.LayoutFlags="All">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnScreenTapped"/>
+            </Image.GestureRecognizers>
+        </Image>
+        <!-- Obstáculos y otros elementos -->
+    </AbsoluteLayout>
+
+</ContentPage>
+
+
+
