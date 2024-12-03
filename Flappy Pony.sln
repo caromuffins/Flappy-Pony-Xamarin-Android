@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.35425.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flappy Pony.Android", "Flappy Pony\Flappy Pony.Android\Flappy Pony.Android.csproj", "{E13B2933-C542-4145-A304-C4D31CDD574E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flappy Pony", "Flappy Pony\Flappy Pony\Flappy Pony.csproj", "{45241C36-0844-4CFF-A176-08C098E5C9ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E13B2933-C542-4145-A304-C4D31CDD574E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E13B2933-C542-4145-A304-C4D31CDD574E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E13B2933-C542-4145-A304-C4D31CDD574E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E13B2933-C542-4145-A304-C4D31CDD574E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E13B2933-C542-4145-A304-C4D31CDD574E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E13B2933-C542-4145-A304-C4D31CDD574E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{45241C36-0844-4CFF-A176-08C098E5C9ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45241C36-0844-4CFF-A176-08C098E5C9ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45241C36-0844-4CFF-A176-08C098E5C9ED}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{45241C36-0844-4CFF-A176-08C098E5C9ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45241C36-0844-4CFF-A176-08C098E5C9ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45241C36-0844-4CFF-A176-08C098E5C9ED}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {04E482FF-687C-4A1B-B156-159FB1C34288}
+	EndGlobalSection
+EndGlobal
