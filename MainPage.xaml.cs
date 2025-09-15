@@ -51,6 +51,11 @@ namespace Flappy_Pony
             }
         }
 
+        private async void OnPolinomiosClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new PolinomioPage());
+        }
+
         private void OnGameTick(object sender, ElapsedEventArgs e)
         {
             _velocity -= _gravity;
