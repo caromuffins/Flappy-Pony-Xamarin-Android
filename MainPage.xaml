@@ -12,6 +12,16 @@
                 <TapGestureRecognizer Tapped="OnScreenTapped"/>
             </Image.GestureRecognizers>
         </Image>
+        
+        <!-- Botón para acceder a la calculadora de polinomios -->
+        <Button x:Name="BtnPolinomios"
+                Text="Calculadora de Polinomios"
+                Clicked="OnPolinomiosClicked"
+                BackgroundColor="Purple"
+                TextColor="White"
+                AbsoluteLayout.LayoutBounds="0.5, 0.05, 200, 40"
+                AbsoluteLayout.LayoutFlags="XProportional"/>
+        
         <!-- Obstáculos y otros elementos -->
     </AbsoluteLayout>
 

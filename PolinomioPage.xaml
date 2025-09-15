@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flappy_Pony.PolinomioPage"
+             Title="Calculadora de Polinomios">
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Label Text="Calculadora de Polinomios" 
+                   FontSize="24" 
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" 
+                   Margin="0,0,0,20"/>
+            
+            <!-- Sección de creación de polinomio -->
+            <Frame BackgroundColor="LightGray" Padding="10" Margin="0,10">
+                <StackLayout>
+                    <Label Text="Crear/Modificar Polinomio" FontAttributes="Bold"/>
+                    
+                    <StackLayout Orientation="Horizontal">
+                        <Entry x:Name="EntryCoeficiente" 
+                               Placeholder="Coeficiente" 
+                               Keyboard="Numeric" 
+                               WidthRequest="100"/>
+                        <Entry x:Name="EntryExponente" 
+                               Placeholder="Exponente" 
+                               Keyboard="Numeric" 
+                               WidthRequest="100"/>
+                        <Button x:Name="BtnAgregarTermino" 
+                                Text="Agregar Término" 
+                                Clicked="OnAgregarTerminoClicked"/>
+                    </StackLayout>
+                    
+                    <StackLayout Orientation="Horizontal">
+                        <Button x:Name="BtnLimpiar" 
+                                Text="Limpiar" 
+                                Clicked="OnLimpiarClicked"/>
+                        <Button x:Name="BtnMostrar" 
+                                Text="Mostrar" 
+                                Clicked="OnMostrarClicked"/>
+                        <Button x:Name="BtnDerivar" 
+                                Text="Derivar" 
+                                Clicked="OnDerivarClicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            
+            <!-- Sección de evaluación -->
+            <Frame BackgroundColor="LightBlue" Padding="10" Margin="0,10">
+                <StackLayout>
+                    <Label Text="Evaluar Polinomio" FontAttributes="Bold"/>
+                    
+                    <StackLayout Orientation="Horizontal">
+                        <Entry x:Name="EntryValorX" 
+                               Placeholder="Valor de x" 
+                               Keyboard="Numeric" 
+                               WidthRequest="150"/>
+                        <Button x:Name="BtnEvaluar" 
+                                Text="Evaluar (x)" 
+                                Clicked="OnEvaluarClicked"
+                                BackgroundColor="Orange"
+                                TextColor="White"/>
+                    </StackLayout>
+                    
+                    <Label x:Name="LabelResultadoEvaluacion" 
+                           Text="Resultado aparecerá aquí" 
+                           FontSize="16"
+                           TextColor="DarkBlue"
+                           Margin="0,10,0,0"/>
+                </StackLayout>
+            </Frame>
+            
+            <!-- Sección de visualización -->
+            <Frame BackgroundColor="LightGreen" Padding="10" Margin="0,10">
+                <StackLayout>
+                    <Label Text="Polinomio Actual" FontAttributes="Bold"/>
+                    <Label x:Name="LabelPolinomio" 
+                           Text="No hay polinomio creado" 
+                           FontSize="16"
+                           FontFamily="Monospace"
+                           TextColor="DarkGreen"/>
+                </StackLayout>
+            </Frame>
+            
+            <!-- Botón para volver al juego -->
+            <Button x:Name="BtnVolverJuego" 
+                    Text="Volver al Juego" 
+                    Clicked="OnVolverJuegoClicked"
+                    BackgroundColor="Red"
+                    TextColor="White"
+                    Margin="0,20,0,0"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
